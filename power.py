@@ -1,13 +1,12 @@
 L = [1,2,4,8,32,64]
 X =5 
-found = False
 i = 0
-while not found and i<len(L):
+while i<len(L):
 	if 2**X == L[i]:
-		found = True
+		print(2**X," found at index ",i)
+		break
 	else:
 		i = i+1
-if found:
-	print("at index ",i)
-else: 
+else:
 	print(2**X," not found")
+	
